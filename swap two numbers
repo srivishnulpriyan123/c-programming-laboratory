@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    int c=a;
+    a=b;
+    b=c;
+    printf("a is %d\n",a);
+    printf("b is %d",b);
+    
+}
