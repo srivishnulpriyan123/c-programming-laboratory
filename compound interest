@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    float p,r,t,n,ci;
+    scanf("%f %f %f %f",&p,&r,&n,&t);
+    float a=(1+(r/n)/100);
+    float b=n*t;
+    ci=p*pow(a,b)-p;
+    printf("%f",ci);
+}
