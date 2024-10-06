@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a<b)
+    {
+        printf("first number is smallest");
+    }
+    else if(a==b)
+    {
+        printf("the given numbers are equal");
+    }
+    else
+    {
+        printf("second number is smallest");
+    }
+}
