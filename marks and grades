@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main()
+{
+    int tamil,english,maths,science,social,total,ptg,average,flag=0;
+    printf("Tamil:/n");
+    scanf("%d",&tamil);
+    printf("English:/n");
+    scanf("%d",&english);
+    printf("Maths:/n");
+    scanf("%d",&maths);
+    printf("Science:/n");
+    scanf("%d",&science);
+    printf("Social:/n");
+    scanf("%d",&social);
+    total=tamil+english+maths+science+social;
+    printf("Total marks is %d/n",total);
+    average=total/5;
+    printf("Average mark is %d/n",average);
+    ptg=average;
+    if(ptg>90&&ptg<=100)
+    {
+        printf("Your grade is /'O/'");
+    }
+    else if(ptg>80&&ptg<=90)
+    {
+        printf("Your grade is /'A+/'");
+    }
+    else if(ptg>70&&ptg<=80)
+    {
+        printf("Your grade is /'A/'");
+    }
+    else if(ptg>60&&ptg<=70)
+    {
+        printf("Your grade is /'B+/'");
+    }
+    else if(ptg>50&&ptg<=60)
+    {
+        printf("Your grade is /'B/'");
+    }
+    else if(ptg<=50&&ptg>=0)
+    {
+        printf("Your grade is /'F/'");
+        flag=flag+1;
+    }
+    else
+    {
+        printf("invalid marks");
+    }
+    if(flag==0)
+    {
+        printf("/nYou successfully cleared the exam");
+    }
+    else
+    {
+        printf("/nYou failed the exam");
+    }
+    
+}
