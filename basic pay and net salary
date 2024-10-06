@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    int bp;
+    float bo,ta,ns;
+    scanf("%d",&bp);
+    if(bp>=0&&bp<=10000)
+    {
+        bo=bp*2/100;
+        ta=bp*1/100;
+    }
+    else if(bp>=10001&&bp<=25000)
+    {
+        bo=bp*5/100;
+        ta=bp*2/100;
+    }
+    else if(bp>=25001&&bp<=50000)
+    {
+        bo=bp*10/100;
+        ta=bp*3/100;
+    }
+    else if(bp>=50001&&bp<=100000)
+    {
+        bo=bp*15/100;
+        ta=bp*5/100;
+    }
+    else if(bp>100000)
+    {
+        bo=bp*20/100;
+        ta=bp*5/100;
+    }
+    else
+    {
+        printf("invalid basic pay");
+    }
+    ns=bp+bo+ta;
+    printf("Net salary is %.2f",ns);
+}
