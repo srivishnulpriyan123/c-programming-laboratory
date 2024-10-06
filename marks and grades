@@ -33,11 +33,11 @@ int main()
     {
         printf("Your grade is \'B+\'");
     }
-    else if(ptg>50&&ptg<=60)
+    else if(ptg>=50&&ptg<=60)
     {
         printf("Your grade is \'B\'");
     }
-    else if(ptg<=50&&ptg>=0)
+    else if(ptg<50&&ptg>=0)
     {
         printf("Your grade is \'F\'");
         flag=flag+1;
