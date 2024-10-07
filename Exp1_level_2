@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a,i,r,n,t,b;
+    scanf("%d",&a);
+    scanf("%d",&r);
+    scanf("%d",&n);
+    for(i=1;i<=n-1;i++)
+    {
+        b=b*r;
+    }
+    t=a*b;
+    printf("the %dth term of the series is %d",n,t);
+}
