@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n,m,i,sum=0,c=0;
+    scanf("%d %d",&n,&m);
+    for(i=n;i<m;i++)
+    {
+        if(i%9==0)
+        {
+            sum=sum+i;
+            c++;
+        }
+    }
+    printf("no of integers:%d",c);
+    printf("\nsum:%d",sum);
+}
