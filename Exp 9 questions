@@ -1,0 +1,284 @@
+Level 0:
+
+1. Write a C program that calculates and displays the area of various shapes using
+
+enum.
+
+Test case 1
+
+0:·Circle⏎
+
+1:·Square⏎
+
+2:·Rectangle⏎
+
+3:·Triangle⏎
+
+Choose·a·shape:·0
+
+radius:·4
+
+Area·of·circle:·50.24⏎
+
+2. Write a C program that uses typedef and takes input from the user to calculate
+
+the area of a rectangle.
+
+Input Format:
+
+Prompt the user to enter the following details:
+
+length: {length}
+
+width: {width}
+
+Output Format:
+
+Display the following information:
+
+Area of the rectangle: < Area > square units
+
+Test case 1
+
+length:·5.0
+
+width:·4.0
+
+Area·of·the·rectangle:·20.00·square·units⏎
+
+3. Write a C program that uses bit fields and takes input from the user to store,
+
+calculate their total and average. Display student's scores, total and average.
+Math·score·(0-31):·25
+
+Physics·score·(0-31):·18
+
+Chemistry·score·(0-31):·29
+
+Entered·Scores:⏎
+
+Math:·25⏎
+
+Physics:·18⏎
+
+Chemistry:·29⏎
+
+Total·Score:·72⏎
+
+Average·Score:·24.00⏎
+
+4. Write a C program that uses pre-processor directives to define and use
+
+constants, and it takes input from the user to calculate the area of a circle.
+
+radius:·4
+
+Area·of·the·circle:·50.24·square·units
+
+5. Write a C program that uses preprocessor directives to define macros for
+
+calculating the sum and product of two numbers entered by the user.
+
+n1:·3
+
+n2:·8
+
+Sum:·11.00⏎
+
+Product:·24.00
+
+Level 1:
+
+1. Write a program given two numbers, the task is to use alternative bits
+
+within two numbers to create result. We take first bits of second number,then second bit of the first number, third bit of second number and take the
+
+fourth bit of a first number and so on and generate a number with it.
+
+Examples :
+
+Input : n = 10, m = 11
+
+Output : 11
+
+Start from right of second number
+
+Binary representation of n = 1 0 1 0
+
+^ ^
+
+Binary representation of m = 1 0 1 1
+
+^ ^
+
+Output is = 1 0 1 1
+
+Input : n = 20, m = 7
+
+Output : 5
+
+Start from right of second number
+
+binary representation of n = 1 0 1 0 0
+
+^ ^
+
+binary representation of m = 0 0 1 1 1
+
+^ ^ ^
+
+Output is = 0 0 1 0 1
+
+2. Write a Program to Count the Number of Trailing Zeroes in the binary
+
+representation of a given positive Integer n.
+
+Question Description : Given an integer, for n = 12, its binary representation is 1100
+
+(used bits) and number of trailing zero bits is 2. Another Example is n = 8 and the output
+
+= 3, binary of 8 is 1000 (Used bits), so there are three trailing zero bits.
+
+Constraints: 1 <= n <= 103
+
+Instruction: To run your custom test cases strictly map your input and output layout with
+
+the visible test cases.
+
+Test case 1
+
+10
+
+1
+
+3. Write a program We have given a large number now we can easily find out
+
+the factorial of this large number. programmers who need more precision
+
+than 64 bits.
+
+Examples:
+
+Input : 100
+
+Output : 933262154439441526816992388562667004-
+
+907159682643816214685929638952175999-
+
+932299156089414639761565182862536979-
+
+208272237582511852109168640000000000-
+
+00000000000000
+
+Input :50
+
+Output : 3041409320171337804361260816606476884
+4377641568960512000000000000
+
+Sample Input and Output-1:
+
+Enter a number : 50
+
+30414093201713378043612608166064768844377641568960512000000000000
+
+Level 2:
+
+1. Write a program given a non-negative integer n, the problem is to reverse the bits
+
+of n and print the number obtained after reversing the bits.
+
+Note that the actual binary representation of the number is being considered for
+
+reversing the bits, no leading 0’s are being considered.
+
+Constraint: The entered number n is a positive integer.
+
+Examples:
+
+Input:
+
+11
+
+Output:
+
+13
+
+Explanation :
+
+(11)10 = (1011)2.
+
+After reversing the bits we get: (1101)2 = (13)10.
+
+Input:
+
+10
+
+Output :
+
+5
+
+Explanation :
+
+(10)10 = (1010)2.
+
+After reversing the bits we get: (0101)2 = (101)2 = (5)10.
+
+2. Write a program given a number n, the task is to Toggle all even position bits of
+
+a number.
+
+Constraint: The entered number n is a positive integer.
+
+Examples:
+
+Input:
+
+10
+
+Output:
+
+0
+
+Explanation :
+
+binary representation of 10 is = 1 0 1 0
+
+After toggling even bits = 0 0 0 0
+
+So the equivalent decimal value is = 0
+
+Input:
+
+20
+
+Output :
+
+30
+Explanation :
+
+binary representation of 20 = 1 0 1 0 0
+
+After toggle = 1 1 1 1 0
+
+So the equivalent decimal value is = 30
+
+3. Write a program to add two numbers.While adding two binary numbers by hand
+
+we keep the carry bits in mind and add it at the same time. But to do same thing
+
+in program we need a lot of checks. Recursive solution can be imagined as
+
+addition of carry and a^b (two inputs) until carry becomes 0.
+
+Sample Input and Output-1:
+
+Enter any two numbers : 45 45
+
+90
+
+Sample Input and Output-2:
+
+Enter any two numbers : 4 78
+
+82
